@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One pay - One month</title>
+  <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+  <div class="app">
+    <div class="calculator-container">
+      <h1>Loan Calculator</h1>
+      <form id="form-control" >
+        <label for="loan">
+          Loan<br> <input type="number" id="loan" min="1" required placeholder="Enter the amount loaned" onchange="calculate()">
+        </label><br>
+        <label for="rate">
+          Interest Rate <br>  <input type="number" id="rate" required placeholder="Enter the interest rate" onchange="calculate()">
+        </label><br>
+        <label for="months">
+          Months <br> <input type="number" id="months" required placeholder="How many months to pay?" onchange="calculate()">
+        </label>
+      </form>
+      <button id="cta">Check!</button>
+      Pay per month:
+      <div id="payment">$0.00</div>
+    </div>
+  </div>
+  
+  <script src="/js/calculator.js"></script>
+</body>
+</html>
